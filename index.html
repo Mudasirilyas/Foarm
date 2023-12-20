@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        form{
+            width: 300px;
+        }
+        input{
+            margin: 5px;
+        }
+        h1,p{
+            text-align: center;
+        }
+        form{
+            margin: auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Registration Foarm</h1>
+    <p>Fill the information correctly</p>
+    <form action="server url">
+        <fieldset>
+            <label for="First Name">First Name:</label>
+            <input type="text" id="First Name" name="First Name" required>
+            <label for="Last Name">Last Name:</label>
+            <input type="text" id="Last Name" name="Last Name" required>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" min="8" max="14" required>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" required>
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="male" name="Gender" required>male
+            <input type="radio" id="female" name="Gender" required>female
+            <input type="radio" id="other" name="Gender" required>other
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="file">upload picture:</label>
+            <input type="file" id="uploadpicture" name="uploadpicture" required><br>
+            <input type="submit" id="submit">
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
